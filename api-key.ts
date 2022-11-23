@@ -1,4 +1,4 @@
-import {InvCompanyBase, Role, uuid} from "."
+import {InvCompanyBase, Role, uuid} from '.'
 
 export interface InvApiKey extends InvCompanyBase {
     CompanyId: uuid,

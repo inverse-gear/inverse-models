@@ -1,3 +1,6 @@
+export {InvApiKey} from './api-key';
+export {InvInvite} from './invite';
+
 export type uuid = string;
 
 export interface InvBase {

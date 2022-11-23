@@ -1,6 +1,6 @@
 import {InvCompany, Role} from '.';
 
-export interface Invite extends InvCompany {
+export interface InvInvite extends InvCompany {
     Email: string,
     Code: string,
     Role: Role,
