@@ -1,10 +1,4 @@
-import {InvCompanyBase, uuid} from "."
-
-export enum Role {
-    user = 'user',
-    admin = 'admin',
-    superadmin = 'superadmin',
-}
+import {InvCompanyBase, Role, uuid} from "."
 
 export interface InvApiKey extends InvCompanyBase {
     CompanyId: uuid,
@@ -13,6 +7,4 @@ export interface InvApiKey extends InvCompanyBase {
     Role: Role,
     ExpiresAt: Date,
     IsActive: Boolean,
-
-    // Company?: InvCompany,
 }

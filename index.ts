@@ -6,6 +6,19 @@ export interface InvBase {
     UpdatedAt: Date,
 }
 
+export interface InvCompany {
+    Id: uuid,
+    CompanyId: uuid,
+}
+
 export interface InvCompanyBase extends InvBase {
     CompanyId: uuid,
+
+    // Company?: InvCompany,
+}
+
+export enum Role {
+    user = 'user',
+    admin = 'admin',
+    superadmin = 'superadmin',
 }
